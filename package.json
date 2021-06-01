@@ -1,0 +1,25 @@
+{
+  "name": "bot-name",
+  "version": "1.0.0",
+  "description": "bot-description",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && cross-env NODE_ENV=production node ./dist/index.js",
+    "dev": "nodemon -e ts --exec \"npm run build && cross-env NODE_ENV=development nodemon ./dist/index.js\"",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your_username/repo_name.git"
+  },
+  "keywords": [],
+  "author": "Work Connect",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/your_username/repo_name/issues"
+  },
+  "homepage": "https://github.com/your_username/repo_name#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
